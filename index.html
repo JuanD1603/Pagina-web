@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negocio de Periféricos</title>
+    <!-- Vincula los archivos CSS y JS desde las subcarpetas -->
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="ruta-del-logo.png" alt="Logo de la tienda">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="carrito.html" class="cart">Carrito</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <!-- Body: Carrusel -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="imagen1.jpg" alt="Producto 1">
+                <div class="carousel-caption">
+                    <h2>Producto Destacado 1</h2>
+                    <p>Descripción breve del producto 1.</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="imagen2.jpg" alt="Producto 2">
+                <div class="carousel-caption">
+                    <h2>Producto Destacado 2</h2>
+                    <p>Descripción breve del producto 2.</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="imagen3.jpg" alt="Producto 3">
+                <div class="carousel-caption">
+                    <h2>Producto Destacado 3</h2>
+                    <p>Descripción breve del producto 3.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-prev">&lt;</button>
+        <button class="carousel-next">&gt;</button>
+        <div class="carousel-indicators">
+            <span data-slide="0" class="active"></span>
+            <span data-slide="1"></span>
+            <span data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Links a otras páginas -->
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </div>
+            <!-- Formulario de suscripción -->
+            <div class="footer-subscribe">
+                <h3>Suscríbete a nuestras noticias</h3>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecciona tu género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                        <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+                    </select>
+
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <!-- Créditos -->
+        <div class="footer-credits">
+            <p>Equipo: tipo 1, tipo 2, tipo 3, tipo 4</p>
+        </div>
+    </footer>
+</body>
+</html>
