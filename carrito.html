@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+        <!-- HEADER -->
+        <header>
+            <div class="header-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <img  src="img/logo1.png" alt="Logo de la tienda">
+                </div>
+                <!-- Navegación-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        <li><a href="carrito.html" class="active" class="cart">Carrito</a></li>
+                    </ul>
+                </nav>
+                <!-- Botón menu falta configuracion -->
+                <div class="menu-toggle">☰</div>
+            </div>
+        </header>
+    <main>
+        <section class="products">
+            <h2>Productos</h2>
+            <div class="product" data-id="1" data-name="Teclado Mecánico" data-price="50">
+                <h3>Teclado Mecánico</h3>
+                <p>Precio: $50</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="product" data-id="2" data-name="Mouse Gamer" data-price="30">
+                <h3>Mouse Gamer</h3>
+                <p>Precio: $30</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="product" data-id="3" data-name="Monitor LED" data-price="150">
+                <h3>Monitor LED</h3>
+                <p>Precio: $150</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </section>
+        <section class="cart">
+            <h2>Carrito de Compras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items"></tbody>
+            </table>
+            <p id="cart-total">Total: $0</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <!-- Links centrados -->
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </div>
+            <!-- Formulario a la derecha -->
+            <div class="footer-subscribe">
+                <h3>Suscríbete a nuestras noticias</h3>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+    
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecciona tu género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                        <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+                    </select>
+    
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+    
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <!-- Créditos -->
+        <div class="footer-credits">
+            <p>Equipo: tipo 1, tipo 2, tipo 3</p>
+        </div>
+    </footer>
+    <script src="js/carrito.js"></script>
+</body>
+</body>
+</html>

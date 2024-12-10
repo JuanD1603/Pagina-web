@@ -1,0 +1,226 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #007BFF;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-height: 1000px;  /*ajusta el tamaño*/ 
+    overflow: hidden;
+    background: #f4f4f4;  /* Color de fondo para ver el espacio*/ 
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* espacio entre imagenes */
+}
+
+.carousel-slide {
+    flex: 1 0 100%; /* Cada imagen ocupa el 100% del ancho del carrusel */
+    display: flex;
+    flex-direction: column; /* Organiza imagen y texto en columnas */
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding: 1rem;
+}
+
+.carousel-slide img {
+    width: auto;
+    height: auto;
+    max-height: 100%;  /*Ajusta la altura de las imágenes al contenedor*/ 
+    margin: 0 auto;
+}
+/* Ajustar el tamaño de las imágenes */
+#imagen1 {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+    display: block; /* Asegura el comportamiento como bloque */
+    max-height: 400px; /* limita el tamaño */
+    object-fit: scale-down; /* Recorta la imagen para que se ajuste al espacio */
+}
+#imagen2 {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+    display: block; /* Asegura el comportamiento como bloque */
+    max-height: 300px; /* limita el tamaño */
+    object-fit: scale-down; /* Recorta la imagen para que se ajuste al espacio */
+}
+#imagen3 {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+    display: block; /* Asegura el comportamiento como bloque */
+    max-height: 400px; /* limita el tamaño */
+    object-fit: scale-down; /* Recorta la imagen para que se ajuste al espacio */
+}
+
+.carousel-caption {
+    text-align: center;
+    margin-top: 1rem;
+    color: #333; /* Ajusta el color  */
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 0.5rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-caption h3 {
+    font-size: 1.5rem; /* Tamaño del título */
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem; /* Tamaño del texto descriptivo */
+    margin: 0;
+}
+/* Footer General */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Links a la izquierda, formulario a la derecha */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+/* Links en el Footer (centrados y grandes) */
+.footer-links ul {
+    list-style: none;
+    display: flex; /* Links en una sola fila */
+    justify-content: center;
+    gap: 2rem; /* Espaciado entre links */
+    padding: 0;
+    margin: 0 auto; /* Centra los links en su contenedor */
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; /* Aumenta el tamaño de los links */
+    font-weight: bold; /* Resalta los links */
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #007BFF; /* Cambia el color al pasar el mouse */
+}
+
+/* Formulario del Footer */
+.footer-subscribe {
+    max-width: 300px; /* Ancho limitado del formulario */
+    margin-left: auto; /* Empuja el formulario hacia la derecha */
+    text-align: left;
+}
+
+.footer-subscribe form input,
+.footer-subscribe form select,
+.footer-subscribe form button {
+    padding: 0.5rem; /* Ajusta el tamaño de los campos */
+    font-size: 0.9rem; /* Mantén una fuente moderada */
+    width: 100%; /* Campos alineados */
+    box-sizing: border-box;
+    margin-bottom: 0.5rem; /* Espacio entre campos */
+}
+
+.footer-subscribe h3 {
+    font-size: 1.2rem; /* Título del formulario */
+    margin-bottom: 1rem;
+}
+
+/* Créditos */
+.footer-credits {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #444;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-subscribe {
+        max-width: 100%;
+    }
+}
