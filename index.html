@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Negocio de Periféricos</title>
-    <!-- Vincula los archivos CSS y JS desde las subcarpetas -->
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
-    <!-- Header -->
+    <!-- HEADER -->
     <header>
         <div class="header-container">
+            <!-- Logo -->
             <div class="logo">
-                <img src="ruta-del-logo.png" alt="Logo de la tienda">
+                <img  src="img/logo1.png" alt="Logo de la tienda">
             </div>
+            <!-- Navegación-->
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -24,37 +25,41 @@
                     <li><a href="carrito.html" class="cart">Carrito</a></li>
                 </ul>
             </nav>
+            <!-- Botón menu falta configuracion -->
             <div class="menu-toggle">☰</div>
         </div>
     </header>
 
-    <!-- Body: Carrusel -->
+    <!-- CARRUSEL DE IMÁGENES -->
     <section class="carousel">
         <div class="carousel-container">
+            <!-- Cada slide contiene una imagen y su descripción -->
             <div class="carousel-slide">
-                <img src="imagen1.jpg" alt="Producto 1">
+                <img id="imagen1" src="img/img1.webp" alt="Producto 1">
                 <div class="carousel-caption">
-                    <h2>Producto Destacado 1</h2>
-                    <p>Descripción breve del producto 1.</p>
+                    <h2>Teclado Mecánico - Gamer (anti-ghost 2.4g)</h2>
+                    <p>Teclado compacto y mecanico, ideal para gamers</p>
                 </div>
             </div>
             <div class="carousel-slide">
-                <img src="imagen2.jpg" alt="Producto 2">
+                <img id="imagen2" src="img/img2.webp" alt="Producto 2">
                 <div class="carousel-caption">
-                    <h2>Producto Destacado 2</h2>
-                    <p>Descripción breve del producto 2.</p>
+                    <h2>Mouse Gamer Inalambrico Recargable Usb Windows Optico Rgb Color Negro</h2>
+                    <p>no se que poner.</p>
                 </div>
             </div>
             <div class="carousel-slide">
-                <img src="imagen3.jpg" alt="Producto 3">
+                <img id="imagen3" src="img/img3.webp" alt="Producto 3">
                 <div class="carousel-caption">
-                    <h2>Producto Destacado 3</h2>
+                    <h2>Rgb Alfombrilla De Ratón Iluminada</h2>
                     <p>Descripción breve del producto 3.</p>
                 </div>
             </div>
         </div>
+        <!-- Botones para cambiar de slide -->
         <button class="carousel-prev">&lt;</button>
         <button class="carousel-next">&gt;</button>
+        <!-- Indicadores del carrusel -->
         <div class="carousel-indicators">
             <span data-slide="0" class="active"></span>
             <span data-slide="1"></span>
@@ -62,10 +67,9 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <!-- Links a otras páginas -->
+            <!-- Links centrados -->
             <div class="footer-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -74,13 +78,13 @@
                     <li><a href="contactos.html">Contactos</a></li>
                 </ul>
             </div>
-            <!-- Formulario de suscripción -->
+            <!-- Formulario a la derecha -->
             <div class="footer-subscribe">
                 <h3>Suscríbete a nuestras noticias</h3>
                 <form>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
-
+    
                     <label for="genero">Género:</label>
                     <select id="genero" name="genero" required>
                         <option value="">Selecciona tu género</option>
@@ -89,17 +93,17 @@
                         <option value="otro">Otro</option>
                         <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
                     </select>
-
+    
                     <label for="correo">Correo Electrónico:</label>
                     <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
-
+    
                     <button type="submit">Suscribirse</button>
                 </form>
             </div>
         </div>
         <!-- Créditos -->
         <div class="footer-credits">
-            <p>Equipo: tipo 1, tipo 2, tipo 3, tipo 4</p>
+            <p>Equipo: tipo 1, tipo 2, tipo 3</p>
         </div>
     </footer>
 </body>
