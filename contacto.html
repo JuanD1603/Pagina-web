@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <!--Css-->
+    <link rel="stylesheet" href="contacto.css" />
+  </head>
+  <body>
+    
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img  src="img/logo1.png" alt="Logo de la tienda">
+            </div>
+            <!-- Navegación-->
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="qs/qs.html">Quiénes Somos</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="carrito.html" class="cart">Carrito</a></li>
+                </ul>
+            </nav>
+            <!-- Botón menu falta configuracion -->
+            <div class="menu-toggle">☰</div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+    <div class="universal">
+      <!--section-->
+      <section>
+        <!--Contacto Contenedor-->
+        <div class="contact-container">
+          <!--Form-->
+          <div class="form-container">
+            <h3>Contactanos Aqui</h3>
+            <form action="" class="contact-form">
+              <input type="text" placeholder="Tu nombre" required />
+              <input type="email" name="" id="" placeholder="Pon tu email..." />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Escriba mensaje Aqui..."
+                required
+              ></textarea>
+              <input type="submit" value="Enviar" class="send-button" />
+            </form>
+          </div>
+          <!--Map -->
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1102662616618!2d-75.91395202423378!3d4.750872741218934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387003345bd20b%3A0xdc9d21192454bee5!2sCorporaci%C3%B3n%20de%20Estudios%20Tecnol%C3%B3gicos%20del%20Norte%20del%20Valle!5e0!3m2!1ses!2sco!4v1733914542760!5m2!1ses!2sco"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!--Footer-->
+    <footer>
+      <div class="footer-content">
+        <!-- Links centrados -->
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="qs/qs.html">Quiénes Somos</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </div>
+        <!-- Formulario a la derecha -->
+        <div class="footer-subscribe">
+          <h3>Suscríbete a nuestras noticias</h3>
+          <form>
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresa tu nombre"
+              required
+            />
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+              <option value="">Selecciona tu género</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option>
+              <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+            </select>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              placeholder="Ingresa tu correo"
+              required
+            />
+
+            <button type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+      <!-- Créditos -->
+      <div class="footer-credits">
+        <p>Equipo: Jaider, Juan David, Miguel, Andrea</p>
+      </div>
+    </footer>
+  </body>
+</html>
