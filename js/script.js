@@ -66,3 +66,9 @@ document.querySelector('.carousel').addEventListener('mouseleave', () => {
     // Cuando el usuario mueve el mouse fuera del carrusel, reinicia el desplazamiento automático.
     autoSlide = setInterval(() => changeSlide(currentSlide + 1), 5000);
 });
+if(localStorage.contadorvisitas){
+    localStorage.contadorvisitas = parseInt(localStorage.contadorvisitas)+1;
+}else {
+    localStorage.contadorvisitas= 1;
+}
+document.getElementById("conteovisitas").innerText = "numero de tus visitas : 1"+ localStorage.contadorvisitas;
