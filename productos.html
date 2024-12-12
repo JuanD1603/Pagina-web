@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/producto.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img  src="img/logo1.png" alt="Logo de la tienda">
+            </div>
+            <!-- Navegación-->
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="qs/qs.html">Quiénes Somos</a></li>
+                    <li><a href="productos.html" class="active" >Productos</a></li>
+                    <li><a href="contacto.html">Contactos</a></li>
+                    <li><a href="carrito.html" class="cart">Carrito</a></li>
+                </ul>
+            </nav>
+            <!-- Botón menu falta configuracion -->
+            <div class="menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <main id="productos">
+
+    </main>
+
+    <aside id="carritoContainer" class="oculto">
+        <h2>Carrito de compras</h2>
+        <div id="contenidoCarrito">
+
+        </div>
+        <h3 id="totalAPagar">Total a pagar: $0</h3>
+        <button onclick="pagar()">Pagar con paypal</button>
+    </aside>
+    <footer>
+        <div class="footer-content">
+            <!-- Links centrados -->
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="qs/qs.html">Quiénes Somos</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <!-- Formulario a la derecha -->
+            <div class="footer-subscribe">
+                <h3>Suscríbete a nuestras noticias</h3>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+    
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecciona tu género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                        <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+                    </select>
+    
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+    
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <!-- Créditos -->
+        <div class="footer-credits">
+            <p>Equipo: Jaider, Juan David, Miguel, Andrea</p>
+        </div>
+    </footer>
+    
+    <script src="js/productos.js"></script>
+</body>
