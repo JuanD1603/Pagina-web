@@ -5,9 +5,9 @@ const productos = [
     {id:4, nombre: 'logitech G-33', precio: 250, imagen: 'img/logitechG33.webp' },
     {id:5, nombre: 'logitech G-304', precio: 300, imagen: 'img/logitechG304.webp' },
     {id:6, nombre: 'teclado Red Dragon Pro', precio: 350, imagen: 'img/tecladoRedDragonPro.webp' },
-    {id:7, nombre: 'miguel', precio: 400, imagen: 'img/img4' },
-    {id:8, nombre: 'Producto 8', precio: 450, imagen: 'img/img5' },
-    {id:9, nombre: 'Producto 9', precio: 500, imagen: 'img/img6' }
+    {id:7, nombre: 'miguel', precio: 400, imagen: 'img/img4.webp' },
+    {id:8, nombre: 'Producto 8', precio: 450, imagen: 'img/img5.png' },
+    {id:9, nombre: 'Producto 9', precio: 500, imagen: 'img/img6.jpg' }
 ];
 
 function mostrarProductos(){
