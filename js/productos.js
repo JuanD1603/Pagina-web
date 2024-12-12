@@ -1,7 +1,7 @@
 const productos = [
-    {id:1, nombre: 'monitor lg 24 pulgas', precio: 100, imagen: "../logo2.png" },
-    {id:2, nombre: 'Producto 2', precio: 150, imagen: 'https://via.placeholder.com/150' },
-    {id:3, nombre: 'Producto 3', precio: 200, imagen: 'https://via.placeholder.com/150' },
+    {id:1, nombre: 'monitor lg 24 pulgas', precio: 100, imagen: 'img/lgmonitor.webp' },
+    {id:2, nombre: 'Monitor gamer curvo Samsung LED ', precio: 150, imagen: 'img/monitorcurvo.jpeg' },
+    {id:3, nombre: 'Teclado Gamer Xtrike Me Mecanico ', precio: 200, imagen: 'https://via.placeholder.com/150' },
     {id:4, nombre: 'Producto 4', precio: 250, imagen: 'https://via.placeholder.com/150' },
     {id:5, nombre: 'Producto 5', precio: 300, imagen: 'https://via.placeholder.com/150' },
     {id:6, nombre: 'Producto 6', precio: 350, imagen: 'https://via.placeholder.com/150' },
