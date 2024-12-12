@@ -1,10 +1,10 @@
 const productos = [
     {id:1, nombre: 'monitor lg 24 pulgas', precio: 100, imagen: 'img/lgmonitor.webp' },
     {id:2, nombre: 'Monitor gamer curvo Samsung LED ', precio: 150, imagen: 'img/monitorcurvo.jpeg' },
-    {id:3, nombre: 'Teclado Gamer Xtrike Me Mecanico ', precio: 200, imagen: 'https://via.placeholder.com/150' },
-    {id:4, nombre: 'Producto 4', precio: 250, imagen: 'https://via.placeholder.com/150' },
-    {id:5, nombre: 'Producto 5', precio: 300, imagen: 'https://via.placeholder.com/150' },
-    {id:6, nombre: 'Producto 6', precio: 350, imagen: 'https://via.placeholder.com/150' },
+    {id:3, nombre: 'Teclado Gamer Xtrike Me Mecanico ', precio: 200, imagen: 'img/tecladorainbow.webp' },
+    {id:4, nombre: 'logitech G-33', precio: 250, imagen: 'img/logitechG33.webp' },
+    {id:5, nombre: 'logitech G-304', precio: 300, imagen: 'img/logitechG304.webp' },
+    {id:6, nombre: 'teclado Red Dragon Pro', precio: 350, imagen: 'img/tecladoRedDragonPro.webp' },
     {id:7, nombre: 'Producto 7', precio: 400, imagen: 'https://via.placeholder.com/150' },
     {id:8, nombre: 'Producto 8', precio: 450, imagen: 'https://via.placeholder.com/150' },
     {id:9, nombre: 'Producto 9', precio: 500, imagen: 'https://via.placeholder.com/150' }
