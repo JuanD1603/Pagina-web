@@ -1,5 +1,5 @@
 const productos = [
-    {id:1, nombre: 'monitor lg 24 pulgas', precio: 100, imagen: "../lg monitor.webp" },
+    {id:1, nombre: 'monitor lg 24 pulgas', precio: 100, imagen: "./lg monitor.webp" },
     {id:2, nombre: 'Producto 2', precio: 150, imagen: 'https://via.placeholder.com/150' },
     {id:3, nombre: 'Producto 3', precio: 200, imagen: 'https://via.placeholder.com/150' },
     {id:4, nombre: 'Producto 4', precio: 250, imagen: 'https://via.placeholder.com/150' },
