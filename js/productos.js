@@ -1,7 +1,7 @@
 const productos = [
     {id:1, nombre: 'monitor lg 24 pulgas', precio: 679000, imagen: 'img/lgmonitor.webp' },
-    {id:2, nombre: 'Monitor gamer curvo Samsung LED ', precio: 1079000, imagen: 'img/monitorcurvo.jpeg' },
-    {id:3, nombre: 'Teclado Gamer Xtrike Me Mecanico ', precio: 1633900, imagen: 'img/tecladorainbow.webp' },
+    {id:2, nombre: 'Monitor gamer curvo Samsung LED ', precio: 633900, imagen: 'img/monitorcurvo.jpeg' },
+    {id:3, nombre: 'Teclado Gamer Xtrike Me Mecanico ', precio: 1101900, imagen: 'img/tecladorainbow.webp' },
     {id:4, nombre: 'logitech G-33', precio: 260900, imagen: 'img/logitechG33.webp' },
     {id:5, nombre: 'logitech G-304', precio:191000, imagen: 'img/logitechG304.webp' },
     {id:6, nombre: 'teclado Red Dragon Pro', precio: 254000, imagen: 'img/tecladoRedDragonPro.webp' },
