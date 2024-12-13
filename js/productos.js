@@ -2,12 +2,12 @@ const productos = [
     {id:1, nombre: 'monitor lg 24 pulgas', precio: 679000, imagen: 'img/lgmonitor.webp' },
     {id:2, nombre: 'Monitor gamer curvo Samsung LED ', precio: 1079000, imagen: 'img/monitorcurvo.jpeg' },
     {id:3, nombre: 'Teclado Gamer Xtrike Me Mecanico ', precio: 1633900, imagen: 'img/tecladorainbow.webp' },
-    {id:4, nombre: 'logitech G-33', precio: 598185, imagen: 'img/logitechG33.webp' },
-    {id:5, nombre: 'logitech G-304', precio: 369328, imagen: 'img/logitechG304.webp' },
-    {id:6, nombre: 'teclado Red Dragon Pro', precio: 350, imagen: 'img/tecladoRedDragonPro.webp' },
-    {id:7, nombre: 'miguel', precio: 3520000, imagen: 'img/img4.webp' },
-    {id:8, nombre: 'Producto 8', precio: 450, imagen: 'img/img5.png' },
-    {id:9, nombre: 'Producto 9', precio: 500, imagen: 'img/img6.jpg' }
+    {id:4, nombre: 'logitech G-33', precio: 260900, imagen: 'img/logitechG33.webp' },
+    {id:5, nombre: 'logitech G-304', precio:191000, imagen: 'img/logitechG304.webp' },
+    {id:6, nombre: 'teclado Red Dragon Pro', precio: 254000, imagen: 'img/tecladoRedDragonPro.webp' },
+    {id:7, nombre: 'monitor portatil asus', precio: 3520000, imagen: 'img/img4.webp' },
+    {id:8, nombre: 'logitech G pro', precio: 700000, imagen: 'img/img5.png' },
+    {id:9, nombre: 'teclado mecanico k87', precio: 379000, imagen: 'img/img6.jpg' }
 ];
 
 function mostrarProductos(){
